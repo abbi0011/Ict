@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ICT Full Video Explainer (Roman Urdu)</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#0f1b2a;--card:#182a40;--tx:#eef4fa;--mut:#9fb3c8;--ac:#3cc3cf;--gr:#2e9e5b}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#eef3f8;--card:#fff;--tx:#14202c;--mut:#566879;--ac:#0e7c86;--gr:#237a47}}
+:root[data-theme="light"]{--bg:#eef3f8;--card:#fff;--tx:#14202c;--mut:#566879;--ac:#0e7c86;--gr:#237a47}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+.w{max-width:680px;margin:0 auto;padding:12px 14px 120px}
+.top{display:flex;gap:8px;align-items:center;font:600 13px system-ui,sans-serif;color:var(--mut)}
+.pb{flex:1;height:6px;background:var(--card);border-radius:4px;overflow:hidden}
+.pb i{display:block;height:100%;width:0;background:var(--ac);transition:width .4s}
+select{max-width:46%;background:var(--card);color:var(--tx);border:1px solid var(--mut);border-radius:8px;padding:5px;font:13px system-ui,sans-serif}
+.ic{font-size:76px;text-align:center;margin:14px 0 2px;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) scale(1.06)}}
+h1{text-align:center;font:700 22px system-ui,sans-serif;margin:0 0 12px;color:var(--ac)}
+.ln{direction:ltr;text-align:left;background:var(--card);border-radius:12px;padding:12px 14px;margin:9px 0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;opacity:0;transform:translateY(12px);transition:.5s;border-left:5px solid var(--ac)}
+.ln.on{opacity:1;transform:none}
+.ln.sp{box-shadow:0 0 0 2px var(--ac)}
+.en{direction:ltr;text-align:left;font:15px/1.5 system-ui,sans-serif;background:var(--card);border-left:5px solid var(--gr);border-radius:12px;padding:12px 14px;margin:12px 0;opacity:0;transform:translateY(12px);transition:.5s}
+.en.on{opacity:1;transform:none}
+.en b{color:var(--gr)}
+.ctl,#ts,#mu{display:none!important}.ctl{display:flex;flex-direction:column;gap:6px;background:var(--card);border-radius:10px;padding:8px 10px;margin:8px 0;font:13px system-ui,sans-serif;color:var(--mut)}.ctl select{max-width:100%;width:100%;max-width:none}.ctl input{width:100%}.note{font:13px/1.4 system-ui,sans-serif;color:var(--mut);text-align:center;margin:6px 0}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--card);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;justify-content:center;border-top:1px solid var(--mut)}
+.bar button{flex:1;max-width:150px;border:0;border-radius:10px;padding:12px 6px;font:600 16px system-ui,sans-serif;background:var(--bg);color:var(--tx)}
+.bar button.p{background:var(--ac);color:#fff}
+
+.ln p{margin:0 0 6px}
+.fl{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin:8px 0;font:600 12.5px system-ui,sans-serif}
+.fl span{background:var(--bg);border:1px solid var(--ac);border-radius:8px;padding:6px 8px}
+.fl i{font-style:normal;color:var(--ac)}
+.tl{display:grid;grid-template-columns:repeat(var(--c,3),1fr);gap:6px;margin:8px 0}
+.tl div{background:var(--bg);border:1px solid var(--mut);border-radius:10px;padding:6px 4px;text-align:center;font:12px/1.3 system-ui,sans-serif}
+.tl b{display:block;font-size:22px}
+.dg{width:100%;height:auto;margin:6px 0;color:var(--tx)}
+.dg text{fill:currentColor;font:11px system-ui,sans-serif}
+.nd{fill:var(--ac);stroke:var(--mut)}.lk{stroke:var(--ac);stroke-width:2;fill:none}.bx{fill:var(--bg);stroke:var(--ac)}
+.fm{background:var(--bg);border-left:4px solid var(--gr);border-radius:8px;padding:8px 10px;margin:8px 0;font:13px/1.6 system-ui,sans-serif}
+.tb{border-collapse:collapse;width:100%;margin:6px 0;font:13px system-ui,sans-serif}.tb td,.tb th{border:1px solid var(--mut);padding:4px 6px;text-align:center}.tb th{background:var(--bg)}
+.tb .pkc{background:#e8a400;color:#000}.tb .fkc{background:var(--ac);color:#fff}
+.ar{text-align:center;color:var(--ac);font:12px system-ui,sans-serif}
+.a1,.a2,.a3{opacity:0}.on .a1{animation:fi 1s .1s forwards}.on .a2{animation:fi 1s 1.4s forwards}.on .a3{animation:fi 1s 2.7s forwards}
+@keyframes fi{to{opacity:1}}
+</style>
+</head>
+<body>
+<div class="w">
+<div class="top"><span id="cnt"></span><div class="pb"><i id="pg"></i></div><select id="sel" aria-label="Topic"></select></div>
+<div class="ic" id="ic">🎓</div>
+<h1 id="tt">ICT Full Course</h1>
+<div id="ls"></div>
+<div class="en" id="en"></div>
+<div class="note" id="nt">Next dabao, content ek ek karke aayega.</div>
+</div>
+<div class="bar"><button id="pv">◀ Back</button><button id="nx" class="p">Next ▶</button></div>
+<script>
+var S=[
+["🌐","1. ICT kya hai",["ICT ka matlab hai Information aur Communication Technology.","Wo sab tools jinse hum information collect, store, process aur share karte hain: phone, laptop, internet.","Paanch components hain: Hardware, Software, Data, Network aur People.","Data kacchi facts hain. Information processed data hai jiska matlab banta hai."],"ICT stands for Information and Communication Technology. It refers to technologies used to collect, store, process, retrieve and communicate information. Its components are hardware, software, data, networks and people."],
+["🤖","2. Emerging Trends",["AI wo machine hai jo insaan ki tarah seekhti aur sochti hai, jaise ChatGPT.","Cloud computing mein files internet ke server pe rakhte hain, jaise Google Drive. IoT mein roz marra ki cheezein internet se jud kar data bhejti hain, jaise smart watch.","VR poori nakli duniya hai. AR asli duniya pe digital cheezein lagata hai, jaise Snapchat filter.","Blockchain ek shared digital register hai jisme data badalna mushkil hai. Big Data bohot bada data hai jisse patterns nikalte hain."],"Emerging trends include AI, cloud computing, IoT, VR, AR, blockchain and big data. Benefits: speed and automation. Challenges: privacy risks, cybercrime and cost."],
+["🔗","3. Networks aur Types",["Network do ya zyada devices ka aapas mein judna hai taake data aur resources share ho sakein, jaise ek printer sab ke liye.","PAN sirf tumhare aas paas hota hai, jaise phone aur Bluetooth. LAN ek building hai, jaise university ka WiFi.","MAN poora shehr hai. WAN poori duniya hai, jaise internet. Yaad rakho: Personal, Local, Metropolitan, Wide."],"A computer network is a group of connected devices that share data and resources. Types: PAN, LAN, MAN and WAN, each with its coverage area and an example."],
+["⭐","4. Topologies",["Bus mein ek lambi cable se sab jude hote hain. Sasti hai, magar cable kharab ho to poora network band.","Star mein sab ek central switch se jude hote hain. Ek PC kharab ho to sirf wahi affect hota hai, magar switch kharab ho to sab band.","Ring mein data gol ghoomta hai. Ek device ya cable toote to poora ring disturb ho jata hai.","Mesh mein har device har doosre se juda hota hai. Sabse reliable hai magar bohot mehnga. Tree stars ka hierarchy hai aur Hybrid do topologies ka mix."],"A topology is the layout of devices in a network. For each topology write: definition, two or three advantages, two or three disadvantages, and draw a diagram."],
+["🛡️","5. Internet, Intranet, Extranet",["Internet sab ke liye public hai, jaise Google. Intranet sirf organisation ke andar private hota hai. Extranet mein organisation ke saath selected bahar ke log hote hain, jaise supplier portal.","Networking ke faide: fori rabta, remote work, resource sharing. Nuqsanat: hacking, malware, identity theft, privacy loss.","Hifazat: mazboot password, multi factor authentication, software update, aur shak wale links se bachna."],"The internet is global and public, an intranet is private to an organisation, and an extranet gives selected outsiders controlled access. Networking improves communication but brings security risks."],
+["💻","6. Programming",["Programming computer ko step by step instructions dena hai, jaise chai ki recipe.","Seekhne ki chhe wajuhat: problem solving, career, automation, creativity, technology samajhna, aur freelancing ya business.","Domains: web, mobile apps, games, data science aur AI, embedded systems, cybersecurity."],"Programming is the process of writing instructions that tell a computer how to perform a task, using a programming language such as Python, Java or C++."],
+["🐍","7. Languages",["Python AI aur data ke liye, Java enterprise apps ke liye, JavaScript websites ke liye.","C aur C plus plus systems aur games ke liye, C sharp desktop apps aur Unity ke liye.","High level languages insaan ko samajh aati hain. Low level machine ke qareeb hoti hain: machine language aur assembly.","Compiler poora code ek saath translate karta hai. Interpreter line by line chalata hai."],"High-level languages are easy for humans; low-level languages are close to the machine. A compiler translates the whole program before execution, an interpreter runs it line by line."],
+["🧩","8. Problem Solving",["Saat steps: Understand, Analyse, Plan, Represent, Implement, Test aur Maintain.","Algorithm tarteeb wale finite steps hain. Pseudocode asaan English jaisa code hai. Flowchart symbols se bana diagram hai.","Teen constructs: Sequence yaani ek ke baad ek, Selection yaani IF ELSE faisla, Iteration yaani loop.","Errors: Syntax mein language ke rules toote hain. Logic mein program chalta hai magar jawab galat. Runtime mein chalte chalte crash."],"Problem solving: understand, analyse, plan, represent, implement, test, maintain. The three constructs are sequence, selection and iteration."],
+["🖥️","9. Computer Hardware",["Hardware computer ke wo hisse hain jinhe tum chhoo sakte ho. Computer ek intelligent device hai: input leta hai, process karta hai, store karta hai aur output deta hai.","Input: keyboard, mouse. Processing: CPU, jisme ALU, Control Unit aur registers hote hain.","Memory: RAM temporary, ROM permanent, Cache bohot tez. Storage: HDD, SSD. Output: monitor, printer.","Communication hardware: NIC, modem, router. Isi liye ise communication device kehte hain."],"Computer hardware refers to the physical components of a computer. It accepts input, processes data, stores results and produces output, and communication hardware lets it exchange data with other devices."],
+["📐","10. ICT System Design",["System banane se pehle naqsha banana, yaani blueprint.","Components: hardware, software, data, network, people aur procedures.","Steps: requirements, feasibility, design, develop, test, implement aur maintain. Misaal: Student Record System."],"ICT system design is the process of planning how hardware, software, data, networks and people work together to meet user requirements."],
+["⏱️","11. CPU Numericals",["Clock CPU ki dhadkan hai. Ek GHz matlab ek second mein ek billion dhadkan.","Cycle time barabar one divided by clock rate. CPU time barabar IC multiply CPI divided by clock rate.","Misaal: do GHz pe ek billion instructions aur CPI do ho, to CPU time ek second.","MIPS barabar clock rate divided by CPI multiply ten to the power six. Weighted CPI mein har fraction ko uske CPI se multiply karke jama karo."],"CPU time = (instruction count x CPI) / clock rate. Write: given, formula, substitution, and the answer with units."],
+["🔢","12. Number Systems",["Binary se decimal banane ke liye har digit ko do ki power se multiply karo aur jama karo. Misaal: 1010.11 barabar 10.75.","Decimal se binary ke liye do se divide karte jao, remainders likho aur neeche se upar padho.","Misaal: 278 barabar 100010110. Fraction ke liye baar baar do se multiply karo."],"Binary to decimal: multiply each digit by its power of two and add. Decimal to binary: divide by two repeatedly and read the remainders from bottom to top."],
+["⚡","13. Logic Gates",["AND mein dono one hon to output one. OR mein koi ek bhi one ho to output one. NOT ulta kar deta hai.","NAND aur NOR, AND aur OR ke ulte hain.","XOR mein inputs different hon to one. XNOR mein inputs same hon to one. Buffer mein jo input wohi output."],"Logic gates: AND, OR, NOT, NAND, NOR, XOR, XNOR and buffer. Always draw the symbol and the truth table."],
+["🗄️","14. Databases",["Database digital almari hai jahan data organised rehta hai. DBMS uska manager software hai, jaise MySQL.","Table poora grid hai, Record ek mukammal entry, Field ek column.","Primary key har record ko unique banati hai, jaise StudentID. Foreign key doosre table ki key hai jo do tables ko jodti hai.","Relational mein tables aapas mein jude hote hain. Non relational mein documents ya key value hote hain."],"A database is an organised collection of related data; a DBMS manages it. A primary key uniquely identifies a record, while a foreign key links to another table."],
+["🏦","15. Database Importance",["Istemal: school, bank, hospital, business, airline.","Redundancy yaani ek hi data baar baar. Isse inconsistency hoti hai. Database duplication kam karta hai.","Security: permissions, password, encryption. Backup data ki copy hai aur Recovery uss se data wapas lana."],"Databases organise information, reduce redundancy, keep data consistent, allow fast searching and controlled access. Backup and recovery protect against data loss."],
+["🌊","16. SDLC aur Models",["SDLC software banane ka poora safar hai, jaise ghar banana. Isse time aur cost control mein rehti hai.","Waterfall seedha hota hai, ek phase khatam phir agla. Requirements fixed hon to use karte hain, jaise bank.","Agile chhote hisson mein feedback ke saath chalta hai, requirements badalti hon to. Spiral mein har chakkar mein risk analysis hota hai."],"SDLC is a structured process to plan, create, test, deploy and maintain software. Common models are Waterfall, Agile and Spiral."],
+["📋","17. SDLC Phases",["Tarteeb yaad rakho: Planning, Requirements, Design, Development, Testing, Deployment, Maintenance.","Planning mein feasibility hoti hai: technical, economic, legal, operational aur schedule.","Requirements mein user se poochte hain. Design naqsha hai. Development code. Testing bugs. Deployment user ko dena. Maintenance fixes aur updates."],"SDLC phases in order: planning, requirements analysis, system design, development, testing, deployment and maintenance. Explain each in two lines."],
+["🌍","18. Web Development",["HTML ghar ka dhancha hai, CSS rang aur design, JavaScript bijli aur interaction.","Front end wo hai jo user dekhta hai. Back end server pe logic aur database. Full stack dono.","Browser, Web server, URL website ka address, aur HTTPS secure hai. Website padhne ke liye, Web app kaam karne ke liye."],"HTML defines structure, CSS controls appearance and JavaScript adds interaction. Front end is what users see, back end runs on the server, and full stack covers both."],
+["🛠️","19. Web Dev Steps",["Aath steps: Requirements, Planning, Design, Content, Development, Testing, Deployment, Maintenance.","Responsive design har screen pe sahi dikhta hai. Testing launch se pehle bugs pakadti hai. Maintenance website ko fresh aur secure rakhti hai."],"Web development steps: requirement gathering, planning, design, content preparation, development, testing, deployment and maintenance."],
+["📁","20. Project",["Project ek temporary kaam hai jiska ek khaas result ho.","Aath stages: idea, objectives, plan, design, build, test, present, feedback.","Misaal Student Record System: add, update, search, view marks. Presentation: Problem, Objectives, Tools, Features, Testing, Result."],"An ICT project goes through selecting an idea, defining requirements, planning, designing, building, testing, presenting and collecting feedback."],
+["🔍","21. Case Studies",["Paanch steps: masle ko Identify karo, topic se Link karo, case ki details ke saath Apply karo, Recommend karo, aur Conclude karo.","Misaal: school ka record register mein ho to database. Teen shehron mein office hon to WAN. Bank ka fixed system ho to Waterfall. Ek PC kharab hone se baqi band na hon to Star."],"Case study answer: identify the problem, link it to the concept, apply it using details from the case, recommend a solution with reasons, and conclude in one line."],
+["🏆","22. Paper Tips",["Define pe ek do line ki definition aur example. Differentiate pe table. Explain pe definition, points aur example.","Har concept ke liye teen sawal: yeh kya hai, kyun chahiye, example kya hai. Saaf likho, headings underline karo, diagram banao. All the best!"],"Define, explain, differentiate with a table, give examples and draw diagrams. Good luck!"]
+];
+
+var fl=function(a){return '<div class="fl">'+a.map(function(x){return '<span>'+x+'</span>'}).join('<i>➜</i>')+'</div>'},
+tl=function(a,n){return '<div class="tl" style="--c:'+(n||3)+'">'+a.map(function(x){return '<div><b>'+x[0]+'</b>'+x[1]+'</div>'}).join('')+'</div>'},
+sv=function(w,h,c){return '<svg viewBox="0 0 '+w+' '+h+'" class="dg">'+c+'</svg>'},
+Tx=function(x,y,t,a){return '<text x="'+x+'" y="'+y+'" text-anchor="'+(a||'middle')+'">'+t+'</text>'},
+Em=function(x,y,e){return '<text x="'+x+'" y="'+y+'" text-anchor="middle" style="font-size:22px">'+e+'</text>'},
+Bx=function(x,y,w,h,t){return '<rect class="bx" x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'" rx="6"/>'+Tx(x+w/2,y+h/2+4,t)},
+Nd=function(x,y,r){return '<circle class="nd" cx="'+x+'" cy="'+y+'" r="'+(r||6)+'"/>'},
+Lk=function(d,w){return '<path class="lk" d="'+d+'"'+(w?' style="stroke-width:'+w+'"':'')+'/>'},
+Pk=function(p){return '<circle r="4" fill="#e8a400"><animateMotion dur="3s" repeatCount="indefinite" path="'+p+'"/></circle>'},
+fm=function(h){return '<div class="fm">'+h+'</div>'};
+function gate(x,y,t,tr){var k={AND:'a',NAND:'a',OR:'o',NOR:'o',XOR:'o',XNOR:'o',NOT:'b',BUF:'b'}[t],P={a:'M0 0H14A12 12 0 0 1 14 24H0Z',o:'M0 0Q16 0 28 12Q16 24 0 24Q8 12 0 0Z',b:'M0 0L24 12L0 24Z'}[k],bub=/^(NAND|NOR|XNOR|NOT)$/.test(t),cx={a:29,o:32,b:28}[k];
+ return '<g transform="translate('+x+','+y+')"><path class="bx" d="'+P+'"/>'+(/^X/.test(t)?Lk('M-5 0Q3 12 -5 24'):'')+(bub?'<circle class="bx" cx="'+cx+'" cy="12" r="3"/>':'')+Lk((k==='b'?'M-16 12H0':'M-16 6H0M-16 18H0')+'M'+(cx+(bub?3:0))+' 12H'+(cx+24),1.2)+Tx(15,42,t)+Tx(15,54,'out '+tr)+'</g>'}
+var gl=Tx(150,72,'Output order: A,B = 00, 01, 10, 11'),
+step7=['Understand','Analyse','Plan','Represent','Implement','Test','Maintain'],
+sd7=['Planning','Requirements','Design','Development','Testing','Deployment','Maintenance'],
+ws8=['Requirements','Planning','Design','Content','Development','Testing','Deployment','Maintenance'];
+var VI=[
+[fl(['ℹ️ Information','📡 Communication','🛠️ Technology']),fl(['Collect','Store','Process','Share']),tl([['🖥️','Hardware'],['💿','Software'],['🔢','Data'],['🌐','Network'],['👤','People']]),fl(['Data: 85, 90, 70','Process: average','Information: average = 81.6'])],
+[tl([['🤖','AI: seekhti machine'],['💬','ChatGPT']],2),tl([['☁️','Cloud: Google Drive'],['⌚','IoT: smart watch']],2),tl([['🥽','VR: sab kuch nakli'],['📱','AR: asli + digital']],2),tl([['⛓️','Blockchain'],['📊','Big Data']],2)],
+[sv(300,100,Lk('M150 50L40 20M150 50L40 80M150 50L260 20M150 50L260 80')+Bx(120,38,60,24,'Router')+Em(40,28,'📱')+Em(40,88,'💻')+Em(260,28,'📱')+Em(260,88,'🖨️')+Pk('M150 50L40 20L150 50L260 80L150 50')),tl([['📱🎧','PAN: 1-10 meter'],['🏫','LAN: building']],2),tl([['🏙️','MAN: poora shehr'],['🌍','WAN: poori duniya']],2)],
+[sv(200,80,Tx(6,10,'BUS','start')+Lk('M10 22H190',3)+[30,70,110,150].map(function(x){return Lk('M'+x+' 22V52')+Nd(x,58)}).join('')+Pk('M10 22H190H10')),
+ sv(200,80,Tx(6,10,'STAR','start')+Lk('M30 14L100 40M170 14L100 40M30 68L100 40M170 68L100 40')+Nd(100,40,9)+Nd(30,14)+Nd(170,14)+Nd(30,68)+Nd(170,68)+Pk('M30 14L100 40L170 68L100 40L30 68L100 40L170 14L100 40L30 14')),
+ sv(200,80,Tx(6,10,'RING','start')+Lk('M100 6L160 25L160 58L100 76L40 58L40 25Z')+Nd(100,6)+Nd(160,25)+Nd(160,58)+Nd(100,76)+Nd(40,58)+Nd(40,25)+Pk('M100 6L160 25L160 58L100 76L40 58L40 25Z')),
+ sv(200,80,Tx(6,10,'MESH','start')+Lk('M100 6L170 30L145 72L55 72L30 30Z M100 6L145 72M100 6L55 72M170 30L55 72M170 30L30 30M145 72L30 30',1.2)+Nd(100,6)+Nd(170,30)+Nd(145,72)+Nd(55,72)+Nd(30,30)+Pk('M100 6L145 72L30 30L170 30L55 72L100 6'))],
+[tl([['🌍','Internet: sab'],['🏢','Intranet: sirf hum'],['🤝','Extranet: hum + mehmaan']]),tl([['✅','Faide: fori rabta, remote work'],['⚠️','Nuqsan: hacking, malware, scams']],2),tl([['🔑','Strong password'],['📲','MFA'],['⬆️','Updates'],['🚫','Shak wale links']],4)],
+[fl(['📝 Instructions (code)','💻 Computer','✅ Output']),tl([['🧠','Problem solving'],['💼','Career'],['🤖','Automation'],['🎨','Creativity'],['🔍','Tech samajhna'],['💰','Freelancing']]),tl([['🌐','Web'],['📱','Mobile'],['🎮','Games'],['📈','AI / Data'],['🔌','Embedded'],['🔒','Security']])],
+[tl([['🐍','Python: AI, data'],['☕','Java: enterprise'],['🟨','JavaScript: web']]),tl([['⚙️','C / C++: systems, games'],['🎯','C#: desktop, Unity']],2),fl(['😊 High-level: Python, Java','⚙️ Assembly','0101 Machine code']),fl(['Source code','Compiler','Poora machine code','Run'])+fl(['Source code','Interpreter','Line by line run'])],
+[fl(step7),sv(220,226,'<ellipse class="bx" cx="110" cy="14" rx="34" ry="12"/>'+Tx(110,18,'Start')+Lk('M110 26V38')+'<path class="bx" d="M78 62L90 38H150L138 62Z"/>'+Tx(114,54,'Input marks')+Lk('M110 62V76')+'<path class="bx" d="M110 76L160 106L110 136L60 106Z"/>'+Tx(110,110,'marks>=50?')+Lk('M60 106H40V152M160 106H180V152')+Tx(34,100,'Yes')+Tx(188,100,'No')+Bx(10,152,60,22,'Pass')+Bx(150,152,60,22,'Fail')+Lk('M40 174V196H180V174M110 196V200')+'<ellipse class="bx" cx="110" cy="212" rx="30" ry="12"/>'+Tx(110,216,'End')),tl([['➡️','Sequence: ek ke baad ek'],['🔀','Selection: IF / ELSE'],['🔁','Iteration: loop']]),tl([['✍️','Syntax: prnt("hi")'],['🧮','Logic: jawab galat'],['💥','Runtime: 5 / 0']])],
+[fl(['⌨️ Input','🧠 CPU','💾 Memory / Storage','🖥️ Output']),tl([['⌨️','Keyboard, mouse'],['🧮','ALU: calculation'],['🎛️','CU: control'],['⚡','Registers']],4),tl([['RAM','Temporary'],['ROM','Permanent'],['Cache','Bohot tez'],['SSD / HDD','Storage']],4),fl(['🖥️ Computer','📶 NIC / Modem','🛜 Router','🌐 Network'])],
+[fl(['📐 Naqsha (blueprint)','🏗️ System']),tl([['🖥️','Hardware'],['💿','Software'],['🔢','Data'],['🌐','Network'],['👤','People'],['📋','Procedures']]),fl(['Requirements','Feasibility','Design','Develop','Test','Implement','Maintain'])],
+[sv(300,76,Lk('M10 60V20H40V60H70V20H100V60H130V20H160V60H190V20H220V60H250V20H280V60',2.5)+Tx(150,74,'Har dhadkan = 1 clock cycle')),fm('Cycle time = 1 / Clock rate<br>CPU time = (IC x CPI) / Clock rate'),fm('Given: IC = 10<sup>9</sup>, CPI = 2, f = 2 GHz<br>CPU time = (10<sup>9</sup> x 2) / (2 x 10<sup>9</sup>) = <b>1 second</b>'),fm('MIPS = f / (CPI x 10<sup>6</sup>) = 2000 / 2 = <b>1000</b><br>Weighted CPI = 0.5(1) + 0.3(2) + 0.2(3) = <b>1.7</b>')],
+['<table class="tb"><tr><th>Digit</th><td>1</td><td>0</td><td>1</td><td>0</td><td>.</td><td>1</td><td>1</td></tr><tr><th>Place</th><td>2<sup>3</sup></td><td>2<sup>2</sup></td><td>2<sup>1</sup></td><td>2<sup>0</sup></td><td></td><td>2<sup>-1</sup></td><td>2<sup>-2</sup></td></tr><tr><th>Value</th><td>8</td><td>0</td><td>2</td><td>0</td><td></td><td>.5</td><td>.25</td></tr></table>'+fm('8 + 0 + 2 + 0 + .5 + .25 = <b>10.75</b>'),
+ (function(){var n=[278,139,69,34,17,8,4,2,1],r=[0,1,1,0,1,0,0,0,1];return '<table class="tb"><tr><th>Divide</th><th>Quotient</th><th>Remainder</th></tr>'+n.map(function(x,j){return '<tr><td>'+x+' / 2</td><td>'+(j<8?n[j+1]:0)+'</td><td><b>'+r[j]+'</b></td></tr>'}).join('')+'</table>'})(),
+ fm('Remainders neeche se upar: <b>1 0 0 0 1 0 1 1 0</b><br>278 = 100010110<br>Check: 256 + 16 + 4 + 2 = 278')],
+[sv(300,76,gate(30,6,'AND','0001')+gate(130,6,'OR','0111')+gate(230,6,'NOT','10')+gl),sv(300,76,gate(30,6,'NAND','1110')+gate(130,6,'NOR','1000')+gl),sv(300,76,gate(30,6,'XOR','0110')+gate(130,6,'XNOR','1001')+gate(230,6,'BUF','01')+gl)],
+[tl([['🗄️','Database = almari'],['👨‍💼','DBMS = manager (MySQL)']],2),'<table class="tb"><tr><th>StudentID</th><th>Name</th><th>Dept</th></tr><tr><td>101</td><td>Ali</td><td>CS</td></tr><tr><td>102</td><td>Sara</td><td>AI</td></tr></table>'+fm('Row = ek record. Column = field. Poora grid = table.'),'<table class="tb"><tr><th class="pkc">StudentID (Primary Key)</th><th>Name</th></tr><tr><td>101</td><td>Ali</td></tr></table><div class="ar">⬇ link hota hai ⬇</div><table class="tb"><tr><th>EnrollID</th><th class="fkc">StudentID (Foreign Key)</th><th>Course</th></tr><tr><td>1</td><td>101</td><td>ICT</td></tr></table>',tl([['🔗','Relational: linked tables'],['📄','NoSQL: documents, key-value']],2)],
+[tl([['🏫','School'],['🏦','Bank'],['🏥','Hospital'],['🛒','Business'],['✈️','Airline']]),fm('❌ Redundancy: Ali ka address 3 jagah. Ek jagah badla, baqi purane = inconsistency<br>✅ Database: address ek jagah, sab jagah same'),fl(['🗄️ Database','💾 Backup copy','♻️ Recovery'])+fm('🔒 Security: permissions, password, encryption')],
+[fl(['Planning','Build','Test','Release','Maintain']),sv(260,112,Bx(4,4,84,20,'Requirements')+Bx(56,32,84,20,'Design')+Bx(108,60,84,20,'Code')+Bx(160,88,84,20,'Test')+Lk('M46 24V28H98V32M98 52V56H150V60M150 80V84H202V88',1.2)+Tx(200,20,'Waterfall: seedha')),fl(['Plan','Build','Test','Feedback'])+fm('↻ Agile: chhote cycles, har baar feedback<br>🌀 Spiral: har chakkar mein risk analysis')],
+[fl(sd7),tl([['🔧','Technical'],['💰','Economic'],['⚖️','Legal'],['👥','Operational'],['⏳','Schedule']]),tl([['📑','Feasibility report'],['📄','SRS'],['🗺️','Design docs'],['💻','Working code'],['🐞','Bug-free'],['🚀','Live system'],['🔄','Updates']],4)],
+['<svg viewBox="0 0 220 140" class="dg"><g class="a1"><rect class="lk" x="45" y="65" width="130" height="70"/><path class="lk" d="M35 65L110 12L185 65Z"/><rect class="lk" x="62" y="85" width="34" height="28"/><rect class="lk" x="130" y="95" width="26" height="40"/></g><g class="a2"><rect x="46" y="66" width="128" height="68" fill="#f2c9a0"/><path d="M38 64L110 16L182 64Z" fill="#c0504d"/><rect x="63" y="86" width="32" height="26" fill="#bcd9ee"/><rect x="131" y="96" width="24" height="38" fill="#7a4b2a"/></g><g class="a3"><rect x="63" y="86" width="32" height="26" fill="#ffe14d"/><circle cx="110" cy="40" r="7" fill="#ffe14d"/></g></svg>'+tl([['🏠','HTML: dhancha'],['🎨','CSS: rang'],['💡','JS: interaction']]),fl(['🧑 Browser (waiter)','🍳 Server (kitchen)','🗄️ Database (store room)']),fm('🔒 https://website.com<br>URL = address, HTTPS = secure')],
+[fl(ws8),tl([['📱','Phone'],['📟','Tablet'],['💻','Laptop']])+fm('Responsive design: teeno pe sahi dikhe')],
+[fl(['Problem','Plan','Build','Test','Present']),fl(['Idea','Objectives','Plan','Design','Build','Test','Present','Feedback']),tl([['➕','Add student'],['✏️','Update'],['🔍','Search'],['📊','View marks']],4)],
+[fl(['Identify','Link','Apply','Recommend','Conclude']),tl([['📚 Registers','➜ Database'],['3 shehar office','➜ WAN'],['Bank fixed','➜ Waterfall'],['1 PC fail','➜ Star']],2)],
+[tl([['Define','1-2 line + example'],['Differentiate','Table banao'],['Explain','Def + points + example']]),fl(['Yeh kya hai?','Kyun chahiye?','Example?','Diagram ✏️'])]
+];
+var i=0,k=0,$=function(x){return document.getElementById(x)};
+function draw(){
+ var s=S[i];$("ic").textContent=s[0];$("tt").textContent=s[1];$("cnt").textContent=(i+1)+"/"+S.length;$("pg").style.width=((i+1)/S.length*100)+"%";$("sel").value=i;
+ var h="";s[2].forEach(function(l,x){h+='<div class="ln"><p>'+l+'</p>'+((VI[i]||[])[x]||"")+"</div>"});$("ls").innerHTML=h;
+ $("en").innerHTML="<b>Paper mein English mein likho:</b><br>"+s[3];
+ apply(false);
+}
+function apply(sc){
+ var s=S[i],els=$("ls").children,n=s[2].length,last=null;
+ [].forEach.call(els,function(e,x){var on=x<k;e.classList.toggle("on",on);if(on)last=e});
+ var en=k>n;$("en").classList.toggle("on",en);if(en)last=$("en");
+ $("nx").textContent=en?(i<S.length-1?"Agla topic ▶":"Khatam ✅"):"Next ▶";
+ $("pv").style.opacity=(i===0&&k===0)?.4:1;
+ if(sc&&last)last.scrollIntoView({behavior:"smooth",block:"center"});
+}
+$("nx").onclick=function(){var n=S[i][2].length;if(k<=n){k++;apply(true)}else if(i<S.length-1){i++;k=0;draw();window.scrollTo(0,0)}};
+$("pv").onclick=function(){if(k>0){k--;apply(true)}else if(i>0){i--;k=S[i][2].length+1;draw()}};
+S.forEach(function(s,x){var o=document.createElement("option");o.value=x;o.textContent=s[1];$("sel").appendChild(o)});
+$("sel").onchange=function(){i=+this.value;k=0;draw();window.scrollTo(0,0)};
+draw();
+</script>
+</body>
+</html>
